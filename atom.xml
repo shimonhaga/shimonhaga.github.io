@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://shimonhaga.github.io/"/>
-  <updated>2018-03-19T06:42:48.585Z</updated>
+  <updated>2018-03-26T10:52:16.883Z</updated>
   <id>https://shimonhaga.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>start-hexo</title>
+    <link href="https://shimonhaga.github.io/2018/03/23/start-hexo/"/>
+    <id>https://shimonhaga.github.io/2018/03/23/start-hexo/</id>
+    <published>2018-03-23T05:03:42.000Z</published>
+    <updated>2018-03-26T10:52:16.883Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="hexo-との出会い"><a href="#hexo-との出会い" class="headerlink" title="hexo との出会い"></a>hexo との出会い</h2><h3 id="フラストレーション"><a href="#フラストレーション" class="headerlink" title="フラストレーション"></a>フラストレーション</h3><p>昨年あたりから <a href="https://qiita.com/shimon_haga" target="_blank" rel="noopener">Qiita</a> を書いていたのだが、技術的な話だけしか書けないので、なんとなくフラストレーションが溜まっていた。<br>とりわけ文章を書きたい欲求があるわけではなく、文章も上手なわけでもない。<br>だが「書けない」というのは、不思議なことに「書きたい」という感情を突き動かす。</p><h3 id="模索"><a href="#模索" class="headerlink" title="模索"></a>模索</h3><p>さて、書きたいが、場所はどうしよう。</p><p>何かプラットフォームを使うか？<br>でも会員登録や ID/PW の管理が面倒くさい。</p><p>自分で作るか？<br>そういえば過去に <a href="https://shimon.xyz" target="_blank" rel="noopener">WordPress でブログ</a>を立ち上げたが、全く手をつけてないな。<br>テーマ弄る時間がなくてやめたんだっけ。<br>そもそも WordPress のソースの書き方がちょっと自分と合わないんだよな。</p><h3 id="セキュリティ"><a href="#セキュリティ" class="headerlink" title="セキュリティ"></a>セキュリティ</h3><p>動的なサイトってのはいつでも外部からの攻撃にさらされる危険がある。<br>VPS なんかでやろうものなら、 OS やらミドルウェアやらのセキュリティアップデートなども気にしなければならない。<br>面倒くさい。<br>かといって AWS のマネージドのやつは、もし万が一、仮に、億が一でもアクセスが増えてしまったら請求額に泣いてしまう。</p><h3 id="静的なブログという道"><a href="#静的なブログという道" class="headerlink" title="静的なブログという道"></a>静的なブログという道</h3><p>WordPress にもそういうプラグインがあったが、ブログ自体を静的にしてしまえば色々な攻撃から身を守れる。<br>置く場所だって自分の責任がないところにすればいい。<br>何かないものか。</p><h3 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h3><p>他にも候補は色々あったが、 <em>hexo</em> は以下の点が良かった。</p><ul><li>コマンドラインで操作すること</li><li>マークダウンで記述できること</li><li>github のホスティングに対応していること</li><li>テーマが色々ある</li><li>カスタマイズできる</li><li>js/css でゴリゴリいじれる</li><li>node</li></ul><h2 id="構築してみる"><a href="#構築してみる" class="headerlink" title="構築してみる"></a>構築してみる</h2><h3 id="ドキュメント読む"><a href="#ドキュメント読む" class="headerlink" title="ドキュメント読む"></a>ドキュメント読む</h3><p>そのまんまだった。<br>とくにない。</p><h3 id="テーマを変更する"><a href="#テーマを変更する" class="headerlink" title="テーマを変更する"></a>テーマを変更する</h3><p>現在(2018年3月時点)採用しているのは <code>apollo</code> のもの。</p><h3 id="プラグインを入れる"><a href="#プラグインを入れる" class="headerlink" title="プラグインを入れる"></a>プラグインを入れる</h3><p>自分は以下のプラグインを採用した。</p><ul><li>hexo-generator-amp</li><li>hexo-generator-archive</li><li>hexo-generator-category</li><li>hexo-generator-feed</li><li>hexo-generator-index</li><li>hexo-generator-search</li><li>hexo-generator-seo-friendly-sitemap</li><li>hexo-generator-tag</li><li>hexo-renderer-ejs</li><li>hexo-renderer-marked</li><li>hexo-renderer-stylus</li><li>hexo-server</li><li>hexo-tag-googlemaps</li><li>hexo-tag-instagram</li><li>hexo-tag-twitter</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;hexo-との出会い&quot;&gt;&lt;a href=&quot;#hexo-との出会い&quot; class=&quot;headerlink&quot; title=&quot;hexo との出会い&quot;&gt;&lt;/a&gt;hexo との出会い&lt;/h2&gt;&lt;h3 id=&quot;フラストレーション&quot;&gt;&lt;a href=&quot;#フラストレーション&quot; c
+      
+    
+    </summary>
+    
+      <category term="hexo" scheme="https://shimonhaga.github.io/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="https://shimonhaga.github.io/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
