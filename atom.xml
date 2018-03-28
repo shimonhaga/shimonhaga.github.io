@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://shimonhaga.github.io/"/>
-  <updated>2018-03-26T10:52:16.883Z</updated>
+  <updated>2018-03-28T09:11:49.161Z</updated>
   <id>https://shimonhaga.github.io/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>start-hexo</title>
+    <title>犬を飼っているんです</title>
+    <link href="https://shimonhaga.github.io/2018/03/26/my-dog/"/>
+    <id>https://shimonhaga.github.io/2018/03/26/my-dog/</id>
+    <published>2018-03-26T12:35:53.000Z</published>
+    <updated>2018-03-28T09:11:49.161Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="うちの犬"><a href="#うちの犬" class="headerlink" title="うちの犬"></a>うちの犬</h2><h3 id="プロフィール"><a href="#プロフィール" class="headerlink" title="プロフィール"></a>プロフィール</h3><table><thead><tr><th style="text-align:right">犬種 :</th><th>柴犬</th></tr></thead><tbody><tr><td style="text-align:right">性別 :</td><td>メス</td></tr><tr><td style="text-align:right">誕生日 :</td><td>2017年8月8日</td></tr><tr><td style="text-align:right">血統書 :</td><td>あり(高かった…)</td></tr><tr><td style="text-align:right">色 :</td><td>黒</td></tr><tr><td style="text-align:right">名前 :</td><td>柚子</td></tr></tbody></table><h3 id="性格"><a href="#性格" class="headerlink" title="性格"></a>性格</h3><ul><li>人間大好き</li><li>犬猫苦手</li><li>食欲旺盛</li></ul><h3 id="スキル"><a href="#スキル" class="headerlink" title="スキル"></a>スキル</h3><ul><li>おすわり</li><li>お手</li><li>待て</li></ul><h2 id="柴犬について"><a href="#柴犬について" class="headerlink" title="柴犬について"></a>柴犬について</h2><h3 id="しばいぬ？しばけん？"><a href="#しばいぬ？しばけん？" class="headerlink" title="しばいぬ？しばけん？"></a>しばいぬ？しばけん？</h3><p>正しい読み方は「しばいぬ」らしい。<br>「しばけん」と呼ぶ人もいるし、自分もそう呼んだりしていたけど、正しくはないそうだ。<br>そもそも「柴」が訓読みなので「犬」も訓読みにするのが普通ということだろうか。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;うちの犬&quot;&gt;&lt;a href=&quot;#うちの犬&quot; class=&quot;headerlink&quot; title=&quot;うちの犬&quot;&gt;&lt;/a&gt;うちの犬&lt;/h2&gt;&lt;h3 id=&quot;プロフィール&quot;&gt;&lt;a href=&quot;#プロフィール&quot; class=&quot;headerlink&quot; title=&quot;プロフィー
+      
+    
+    </summary>
+    
+      <category term="dog" scheme="https://shimonhaga.github.io/categories/dog/"/>
+    
+    
+      <category term="dog" scheme="https://shimonhaga.github.io/tags/dog/"/>
+    
+      <category term="pet" scheme="https://shimonhaga.github.io/tags/pet/"/>
+    
+      <category term="shibainu" scheme="https://shimonhaga.github.io/tags/shibainu/"/>
+    
+      <category term="shiba" scheme="https://shimonhaga.github.io/tags/shiba/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo を始めます</title>
     <link href="https://shimonhaga.github.io/2018/03/23/start-hexo/"/>
     <id>https://shimonhaga.github.io/2018/03/23/start-hexo/</id>
-    <published>2018-03-23T05:03:42.000Z</published>
-    <updated>2018-03-26T10:52:16.883Z</updated>
+    <published>2018-03-22T15:00:00.000Z</published>
+    <updated>2018-03-26T12:05:05.138Z</updated>
     
     <content type="html"><![CDATA[<h2 id="hexo-との出会い"><a href="#hexo-との出会い" class="headerlink" title="hexo との出会い"></a>hexo との出会い</h2><h3 id="フラストレーション"><a href="#フラストレーション" class="headerlink" title="フラストレーション"></a>フラストレーション</h3><p>昨年あたりから <a href="https://qiita.com/shimon_haga" target="_blank" rel="noopener">Qiita</a> を書いていたのだが、技術的な話だけしか書けないので、なんとなくフラストレーションが溜まっていた。<br>とりわけ文章を書きたい欲求があるわけではなく、文章も上手なわけでもない。<br>だが「書けない」というのは、不思議なことに「書きたい」という感情を突き動かす。</p><h3 id="模索"><a href="#模索" class="headerlink" title="模索"></a>模索</h3><p>さて、書きたいが、場所はどうしよう。</p><p>何かプラットフォームを使うか？<br>でも会員登録や ID/PW の管理が面倒くさい。</p><p>自分で作るか？<br>そういえば過去に <a href="https://shimon.xyz" target="_blank" rel="noopener">WordPress でブログ</a>を立ち上げたが、全く手をつけてないな。<br>テーマ弄る時間がなくてやめたんだっけ。<br>そもそも WordPress のソースの書き方がちょっと自分と合わないんだよな。</p><h3 id="セキュリティ"><a href="#セキュリティ" class="headerlink" title="セキュリティ"></a>セキュリティ</h3><p>動的なサイトってのはいつでも外部からの攻撃にさらされる危険がある。<br>VPS なんかでやろうものなら、 OS やらミドルウェアやらのセキュリティアップデートなども気にしなければならない。<br>面倒くさい。<br>かといって AWS のマネージドのやつは、もし万が一、仮に、億が一でもアクセスが増えてしまったら請求額に泣いてしまう。</p><h3 id="静的なブログという道"><a href="#静的なブログという道" class="headerlink" title="静的なブログという道"></a>静的なブログという道</h3><p>WordPress にもそういうプラグインがあったが、ブログ自体を静的にしてしまえば色々な攻撃から身を守れる。<br>置く場所だって自分の責任がないところにすればいい。<br>何かないものか。</p><h3 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h3><p>他にも候補は色々あったが、 <em>hexo</em> は以下の点が良かった。</p><ul><li>コマンドラインで操作すること</li><li>マークダウンで記述できること</li><li>github のホスティングに対応していること</li><li>テーマが色々ある</li><li>カスタマイズできる</li><li>js/css でゴリゴリいじれる</li><li>node</li></ul><h2 id="構築してみる"><a href="#構築してみる" class="headerlink" title="構築してみる"></a>構築してみる</h2><h3 id="ドキュメント読む"><a href="#ドキュメント読む" class="headerlink" title="ドキュメント読む"></a>ドキュメント読む</h3><p>そのまんまだった。<br>とくにない。</p><h3 id="テーマを変更する"><a href="#テーマを変更する" class="headerlink" title="テーマを変更する"></a>テーマを変更する</h3><p>現在(2018年3月時点)採用しているのは <code>apollo</code> のもの。</p><h3 id="プラグインを入れる"><a href="#プラグインを入れる" class="headerlink" title="プラグインを入れる"></a>プラグインを入れる</h3><p>自分は以下のプラグインを採用した。</p><ul><li>hexo-generator-amp</li><li>hexo-generator-archive</li><li>hexo-generator-category</li><li>hexo-generator-feed</li><li>hexo-generator-index</li><li>hexo-generator-search</li><li>hexo-generator-seo-friendly-sitemap</li><li>hexo-generator-tag</li><li>hexo-renderer-ejs</li><li>hexo-renderer-marked</li><li>hexo-renderer-stylus</li><li>hexo-server</li><li>hexo-tag-googlemaps</li><li>hexo-tag-instagram</li><li>hexo-tag-twitter</li></ul>]]></content>
     
