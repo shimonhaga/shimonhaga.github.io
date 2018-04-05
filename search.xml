@@ -5,6 +5,7 @@
     <entry>
       <title>犬のブログつくったった</title>
       <link href="/2018/04/05/dog-blog/"/>
+      <url>/2018/04/05/dog-blog/</url>
       <content type="html"><![CDATA[<h2 id="公開"><a href="#公開" class="headerlink" title="公開"></a>公開</h2><p><a href="https://yuzu.shibainu.love" target="_blank" rel="noopener">黒柴の柚子</a></p><h2 id="構築"><a href="#構築" class="headerlink" title="構築"></a>構築</h2><h3 id="また-hexo"><a href="#また-hexo" class="headerlink" title="また hexo"></a>また hexo</h3><p>そういえば hexo ってなんて読むの？<br>「へくそ」「へきそ」「へぉ」？<br>最後のはないと思うけど、心の中では「へくそ」って読んでる。<br>でもなんかアレな文字列が入っているので「へきそ」って読むことにしようか悩めるお年頃。</p><h3 id="環境"><a href="#環境" class="headerlink" title="環境"></a>環境</h3><p>ここは github だけど、今回は AWS 上に構築してみた。<br>S3 + CloudFront + CertificateManager + Route53 で、ドメインの取得以外は全部 Amazon 様にお願いした。<br>いやーサーバレス最高。メンテレス最高。</p><h2 id="悩み"><a href="#悩み" class="headerlink" title="悩み"></a>悩み</h2><p><a href="https://qiita.com/shimon_haga/items/c19e10c584b742cb502f" target="_blank" rel="noopener">Qiita</a> にも書いたのだけど、 S3 + CloudFront でブログを公開するのには課題がいくつかある。<br>CloudFront を S3 のバケットと直接繋げると、ディレクトリ <code>/</code> にアクセスした時に index.html を参照してくれない。<br>そのため、 CloudFront には S3 の URL を指定することになる。<br>しかし S3 の URL　を指定するためには、ウェブサイトホスティング状態にしておかなければならない。<br>そうするとブラウザから S3 に直接アクセスすることができる。</p><h3 id="SEO"><a href="#SEO" class="headerlink" title="SEO"></a>SEO</h3><p>何が問題なのかというと、本来は一つのページなのに検索結果で複数の URL が表示されてしまうのだ。<br>「 SEO 効果が分散する」などと言われるアレ。<br>最悪なところ、コピーサイトを量産している悪質なサイトと Google に認定されてしまう可能性もあるらしい。<br>ウェブ解析士ではないので、詳しくはどうなってるかわからないけど、なんとも恐ろしい話だ。</p><h2 id="模索中"><a href="#模索中" class="headerlink" title="模索中"></a>模索中</h2><p>S3 の URL を CloudFront からのみアクセスできるような設定ができないか色々調べてみる予定。</p>]]></content>
       
       <categories>
@@ -16,8 +17,6 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 犬 </tag>
             
             <tag> ペット </tag>
@@ -26,6 +25,8 @@
             
             <tag> ブログ </tag>
             
+            <tag> hexo </tag>
+            
         </tags>
       
     </entry>
@@ -33,6 +34,7 @@
     <entry>
       <title>犬を飼っているんです</title>
       <link href="/2018/03/26/my-dog/"/>
+      <url>/2018/03/26/my-dog/</url>
       <content type="html"><![CDATA[<h2 id="うちの犬"><a href="#うちの犬" class="headerlink" title="うちの犬"></a>うちの犬</h2><h3 id="プロフィール"><a href="#プロフィール" class="headerlink" title="プロフィール"></a>プロフィール</h3><table><thead><tr><th style="text-align:right">犬種 :</th><th>柴犬</th></tr></thead><tbody><tr><td style="text-align:right">性別 :</td><td>メス</td></tr><tr><td style="text-align:right">誕生日 :</td><td>2017年8月8日</td></tr><tr><td style="text-align:right">血統書 :</td><td>あり(高かった…)</td></tr><tr><td style="text-align:right">色 :</td><td>黒</td></tr><tr><td style="text-align:right">名前 :</td><td>柚子</td></tr></tbody></table><h3 id="性格"><a href="#性格" class="headerlink" title="性格"></a>性格</h3><ul><li>人間大好き</li><li>犬猫苦手</li><li>食欲旺盛</li></ul><h3 id="スキル"><a href="#スキル" class="headerlink" title="スキル"></a>スキル</h3><ul><li>おすわり</li><li>お手</li><li>待て</li></ul><h3 id="SNS"><a href="#SNS" class="headerlink" title="SNS"></a>SNS</h3><ul><li><a href="https://www.instagram.com/kuroshiba.yuzu.20170808" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://twitter.com/kuroshiba_yuzu" target="_blank" rel="noopener">Twitter</a></li></ul><h2 id="柴犬について"><a href="#柴犬について" class="headerlink" title="柴犬について"></a>柴犬について</h2><h3 id="しばいぬ？しばけん？"><a href="#しばいぬ？しばけん？" class="headerlink" title="しばいぬ？しばけん？"></a>しばいぬ？しばけん？</h3><p>正しい読み方は「しばいぬ」らしい。<br>「しばけん」と呼ぶ人もいるし、自分もそう呼んだりしていたけど、正しくはないそうだ。<br>そもそも「柴」が訓読みなので「犬」も訓読みにするのが普通ということだろうか。</p>]]></content>
       
       <categories>
@@ -57,6 +59,7 @@
     <entry>
       <title>hexo を始めます</title>
       <link href="/2018/03/23/start-hexo/"/>
+      <url>/2018/03/23/start-hexo/</url>
       <content type="html"><![CDATA[<h2 id="hexo-との出会い"><a href="#hexo-との出会い" class="headerlink" title="hexo との出会い"></a>hexo との出会い</h2><h3 id="フラストレーション"><a href="#フラストレーション" class="headerlink" title="フラストレーション"></a>フラストレーション</h3><p>昨年あたりから <a href="https://qiita.com/shimon_haga" target="_blank" rel="noopener">Qiita</a> を書いていたのだが、技術的な話だけしか書けないので、なんとなくフラストレーションが溜まっていた。<br>とりわけ文章を書きたい欲求があるわけではなく、文章も上手なわけでもない。<br>だが「書けない」というのは、不思議なことに「書きたい」という感情を突き動かす。</p><h3 id="模索"><a href="#模索" class="headerlink" title="模索"></a>模索</h3><p>さて、書きたいが、場所はどうしよう。</p><p>何かプラットフォームを使うか？<br>でも会員登録や ID/PW の管理が面倒くさい。</p><p>自分で作るか？<br>そういえば過去に <a href="https://shimon.xyz" target="_blank" rel="noopener">WordPress でブログ</a>を立ち上げたが、全く手をつけてないな。<br>テーマ弄る時間がなくてやめたんだっけ。<br>そもそも WordPress のソースの書き方がちょっと自分と合わないんだよな。</p><h3 id="セキュリティ"><a href="#セキュリティ" class="headerlink" title="セキュリティ"></a>セキュリティ</h3><p>動的なサイトってのはいつでも外部からの攻撃にさらされる危険がある。<br>VPS なんかでやろうものなら、 OS やらミドルウェアやらのセキュリティアップデートなども気にしなければならない。<br>面倒くさい。<br>かといって AWS のマネージドのやつは、もし万が一、仮に、億が一でもアクセスが増えてしまったら請求額に泣いてしまう。</p><h3 id="静的なブログという道"><a href="#静的なブログという道" class="headerlink" title="静的なブログという道"></a>静的なブログという道</h3><p>WordPress にもそういうプラグインがあったが、ブログ自体を静的にしてしまえば色々な攻撃から身を守れる。<br>置く場所だって自分の責任がないところにすればいい。<br>何かないものか。</p><h3 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h3><p>他にも候補は色々あったが、 <em>hexo</em> は以下の点が良かった。</p><ul><li>コマンドラインで操作すること</li><li>マークダウンで記述できること</li><li>github のホスティングに対応していること</li><li>テーマが色々ある</li><li>カスタマイズできる</li><li>js/css でゴリゴリいじれる</li><li>node</li></ul><h2 id="構築してみる"><a href="#構築してみる" class="headerlink" title="構築してみる"></a>構築してみる</h2><h3 id="ドキュメント読む"><a href="#ドキュメント読む" class="headerlink" title="ドキュメント読む"></a>ドキュメント読む</h3><p>そのまんまだった。<br>とくにない。</p><h3 id="テーマを変更する"><a href="#テーマを変更する" class="headerlink" title="テーマを変更する"></a>テーマを変更する</h3><p>現在(2018年3月時点)採用しているのは <code>apollo</code> のもの。</p><h3 id="プラグインを入れる"><a href="#プラグインを入れる" class="headerlink" title="プラグインを入れる"></a>プラグインを入れる</h3><p>自分は以下のプラグインを採用した。</p><ul><li>hexo-generator-amp</li><li>hexo-generator-archive</li><li>hexo-generator-category</li><li>hexo-generator-feed</li><li>hexo-generator-index</li><li>hexo-generator-search</li><li>hexo-generator-seo-friendly-sitemap</li><li>hexo-generator-tag</li><li>hexo-renderer-ejs</li><li>hexo-renderer-marked</li><li>hexo-renderer-stylus</li><li>hexo-server</li><li>hexo-tag-googlemaps</li><li>hexo-tag-instagram</li><li>hexo-tag-twitter</li></ul>]]></content>
       
       <categories>
@@ -80,12 +83,14 @@
     <entry>
       <title>Page not found</title>
       <link href="/404.html"/>
+      <url>/404.html</url>
       <content type="html"><![CDATA[<p>Sorry.<br>Page not found.</p>]]></content>
     </entry>
     
     <entry>
       <title></title>
       <link href="/js/search.js"/>
+      <url>/js/search.js</url>
       <content type="html"><![CDATA[var searchFunc = function(path, search_id, content_id) {    'use strict';    $.ajax({        url: path,        dataType: "xml",        success: function( xmlResponse ) {            // get the contents from search data            var datas = $( "entry", xmlResponse ).map(function() {                return {                    title: $( "title", this ).text(),                    content: $("content",this).text(),                    url: $( "url" , this).text()                };            }).get();            var $input = document.getElementById(search_id);            var $resultContent = document.getElementById(content_id);            $input.addEventListener('input', function(){                var str='<ul class="\"search-result-list\"">';                                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);                $resultContent.innerHTML = "";                if (this.value.trim().length <= 0)="" {="" return;="" }="" perform="" local="" searching="" datas.foreach(function(data)="" var="" ismatch="true;" content_index="[];" data_title="data.title.trim().toLowerCase();" data_content="data.content.trim().replace(/<[^">]+>/g,"").toLowerCase();                    var data_url = data.url;                    var index_title = -1;                    var index_content = -1;                    var first_occur = -1;                    // only match artiles with not empty titles and contents                    if(data_title != '' && data_content != '') {                        keywords.forEach(function(keyword, i) {                            index_title = data_title.indexOf(keyword);                            index_content = data_content.indexOf(keyword);                            if( index_title < 0 && index_content < 0 ){                                isMatch = false;                            } else {                                if (index_content < 0) {                                    index_content = 0;                                }                                if (i == 0) {                                    first_occur = index_content;                                }                            }                        });                    }                    // show search results                    if (isMatch) {                        str += "<li><a href=""+ data_url +"" class="search-result-title">"+ data_title +"</a>";                        var content = data.content.trim().replace(/<[^>]+>/g,"");                        if (first_occur >= 0) {                            // cut out 100 characters                            var start = first_occur - 20;                            var end = first_occur + 80;                            if(start < 0){                                start = 0;                            }                            if(start == 0){                                end = 100;                            }                            if(end > content.length){                                end = content.length;                            }                            var match_content = content.substr(start, end);                             // highlight all keywords                            keywords.forEach(function(keyword){                                var regS = new RegExp(keyword, "gi");                                match_content = match_content.replace(regS, "<em class="\"search-keyword\"">"+keyword+"</em>");                            });                            str += "<p class="\"search-result\"">" + match_content +"...</p>"                        }                        str += "</[^></li>";                    }                });                str += "</=></ul>";                $resultContent.innerHTML = str;            });        }    });}]]></content>
     </entry>
     
