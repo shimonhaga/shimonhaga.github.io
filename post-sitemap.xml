@@ -7,8 +7,16 @@
     </url>
 
     <url>
+        <loc>https://shimonhaga.github.io/2019/03/10/react/</loc>
+        <lastmod>2019-03-13T02:39:47.562Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://shimonhaga.github.io/2018/04/05/dog-blog/</loc>
-        <lastmod>2018-04-05T12:13:26.697Z</lastmod>
+        <lastmod>2018-04-05T12:13:26.696Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

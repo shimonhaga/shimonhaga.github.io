@@ -22,8 +22,7 @@
   
   <link rel="stylesheet" href="/css/style.css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  
-<script type="text/javascript">
+  <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-84675212-4']);
   _gaq.push(['_trackPageview']);
@@ -34,9 +33,8 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-
   
-</head>
+</head></html>
 <body>
   <div id="container">
     <div class="mobile-nav-panel">
@@ -58,7 +56,53 @@
 	</div>
 </header>
     <div id="main">
-      
+      <article id="post-react" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2019/03/10/react/" class="article-date">
+  <time datetime="2019-03-10T13:00:00.000Z" itemprop="datePublished">2019-03-10</time>
+</a>
+		</span>
+		<span class="meta-elements author">Shimon Haga</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		<h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/2019/03/10/react/">React で自分のサイト作ってみた</a>
+    </h1>
+	</header>
+	<div class="entry-content">
+		
+    	<h2 id="SPA-というものを作ってみたかった"><a href="#SPA-というものを作ってみたかった" class="headerlink" title="SPA というものを作ってみたかった"></a>SPA というものを作ってみたかった</h2><p>昨年くらいから ReactNative を利用したアプリ開発に関わっていたので、その経験を生かそうと思い立った。<br>どうせだから自分のポートフォリオも兼ねて SPA というものに挑戦してみようと思った。</p>
+<p><a href="https://shimon.biz" target="_blank" rel="noopener">しもにんぐ</a></p>
+<h2 id="制作について"><a href="#制作について" class="headerlink" title="制作について"></a>制作について</h2><h3 id="工数"><a href="#工数" class="headerlink" title="工数"></a>工数</h3><p>制作期間はおよそ1ヶ月。<br>業後や休みの日などを使ってちまちまと作っていたので、実際の工数的には30時間くらいかな？</p>
+<h3 id="環境"><a href="#環境" class="headerlink" title="環境"></a>環境</h3><p>SPA は静的ファイルが置ければ良いので、 s3 を使うことにした。<br>SSL も使いたかったので cloudfront を利用。<br>どうせだからとドメインの管理も お名前.com から route53 に移管した。</p>
+<p>結果、全て AWS 上に構築することができた。</p>
+<h3 id="デザイン"><a href="#デザイン" class="headerlink" title="デザイン"></a>デザイン</h3><p>material-ui に一任した。<br>デザインセンスは皆無なのですよ。</p>
+<h3 id="SPA-は必要か？"><a href="#SPA-は必要か？" class="headerlink" title="SPA は必要か？"></a>SPA は必要か？</h3><p>必要なかったと思う。<br>そもそもアプリケーションじゃないし。</p>
+<h2 id="今後の目標"><a href="#今後の目標" class="headerlink" title="今後の目標"></a>今後の目標</h2><p>本来ならこの手のサイトは全てのページをベタがきでも良いのだけど、わざわざデータを配列で持たせている。<br>なので、今後は API を用意して動的にデータを取得したり、そのための CMS を作ってみようと思う。</p>
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				<div class="article-category">
+    <a class="article-category-link" href="/categories/react/">react</a>
+  </div>
+			</span>
+			<span class="tags">
+				<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react/">react</a></li></ul>
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
   
     <article id="post-dog-blog" class="post">
 	<footer class="entry-meta-header">
@@ -74,13 +118,9 @@
 	</footer>
 	
 	<header class="entry-header">
-		
-  
-    <h1 itemprop="name" class="entry-title">
+		<h1 itemprop="name" class="entry-title">
       <a class="article-title" href="/2018/04/05/dog-blog/">犬のブログつくったった</a>
     </h1>
-  
-
 	</header>
 	<div class="entry-content">
 		
@@ -90,22 +130,17 @@
 <h2 id="悩み"><a href="#悩み" class="headerlink" title="悩み"></a>悩み</h2><p><a href="https://qiita.com/shimon_haga/items/c19e10c584b742cb502f" target="_blank" rel="noopener">Qiita</a> にも書いたのだけど、 S3 + CloudFront でブログを公開するのには課題がいくつかある。<br>CloudFront を S3 のバケットと直接繋げると、ディレクトリ <code>/</code> にアクセスした時に index.html を参照してくれない。<br>そのため、 CloudFront には S3 の URL を指定することになる。<br>しかし S3 の URL　を指定するためには、ウェブサイトホスティング状態にしておかなければならない。<br>そうするとブラウザから S3 に直接アクセスすることができる。</p>
 <h3 id="SEO"><a href="#SEO" class="headerlink" title="SEO"></a>SEO</h3><p>何が問題なのかというと、本来は一つのページなのに検索結果で複数の URL が表示されてしまうのだ。<br>「 SEO 効果が分散する」などと言われるアレ。<br>最悪なところ、コピーサイトを量産している悪質なサイトと Google に認定されてしまう可能性もあるらしい。<br>ウェブ解析士ではないので、詳しくはどうなってるかわからないけど、なんとも恐ろしい話だ。</p>
 <h2 id="模索中"><a href="#模索中" class="headerlink" title="模索中"></a>模索中</h2><p>S3 の URL を CloudFront からのみアクセスできるような設定ができないか色々調べてみる予定。</p>
-
     
 	</div>
 	<footer class="entry-footer">
 		<div class="entry-meta-footer">
 			<span class="category">
-				
-  <div class="article-category">
+				<div class="article-category">
     <a class="article-category-link" href="/categories/dog/">dog</a>
   </div>
-
 			</span>
 			<span class="tags">
-				
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ブログ/">ブログ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ペット/">ペット</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/柴犬/">柴犬</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/犬/">犬</a></li></ul>
-
+				<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ブログ/">ブログ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ペット/">ペット</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/柴犬/">柴犬</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/犬/">犬</a></li></ul>
 			</span>
 		</div>
 	</footer>
@@ -114,9 +149,6 @@
 
 
 	<hr class="article-devider">
-
-
-
   
     <article id="post-my-dog" class="post">
 	<footer class="entry-meta-header">
@@ -132,13 +164,9 @@
 	</footer>
 	
 	<header class="entry-header">
-		
-  
-    <h1 itemprop="name" class="entry-title">
+		<h1 itemprop="name" class="entry-title">
       <a class="article-title" href="/2018/03/26/my-dog/">犬を飼っているんです</a>
     </h1>
-  
-
 	</header>
 	<div class="entry-content">
 		
@@ -187,22 +215,17 @@
 <li><a href="https://twitter.com/kuroshiba_yuzu" target="_blank" rel="noopener">Twitter</a></li>
 </ul>
 <h2 id="柴犬について"><a href="#柴犬について" class="headerlink" title="柴犬について"></a>柴犬について</h2><h3 id="しばいぬ？しばけん？"><a href="#しばいぬ？しばけん？" class="headerlink" title="しばいぬ？しばけん？"></a>しばいぬ？しばけん？</h3><p>正しい読み方は「しばいぬ」らしい。<br>「しばけん」と呼ぶ人もいるし、自分もそう呼んだりしていたけど、正しくはないそうだ。<br>そもそも「柴」が訓読みなので「犬」も訓読みにするのが普通ということだろうか。</p>
-
     
 	</div>
 	<footer class="entry-footer">
 		<div class="entry-meta-footer">
 			<span class="category">
-				
-  <div class="article-category">
+				<div class="article-category">
     <a class="article-category-link" href="/categories/dog/">dog</a>
   </div>
-
 			</span>
 			<span class="tags">
-				
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ペット/">ペット</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/柴犬/">柴犬</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/犬/">犬</a></li></ul>
-
+				<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ペット/">ペット</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/柴犬/">柴犬</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/犬/">犬</a></li></ul>
 			</span>
 		</div>
 	</footer>
@@ -211,9 +234,6 @@
 
 
 	<hr class="article-devider">
-
-
-
   
     <article id="post-start-hexo" class="post">
 	<footer class="entry-meta-header">
@@ -229,13 +249,9 @@
 	</footer>
 	
 	<header class="entry-header">
-		
-  
-    <h1 itemprop="name" class="entry-title">
+		<h1 itemprop="name" class="entry-title">
       <a class="article-title" href="/2018/03/23/start-hexo/">hexo を始めます</a>
     </h1>
-  
-
 	</header>
 	<div class="entry-content">
 		
@@ -275,22 +291,17 @@
 <li>hexo-tag-instagram</li>
 <li>hexo-tag-twitter</li>
 </ul>
-
     
 	</div>
 	<footer class="entry-footer">
 		<div class="entry-meta-footer">
 			<span class="category">
-				
-  <div class="article-category">
+				<div class="article-category">
     <a class="article-category-link" href="/categories/hexo/">hexo</a>
   </div>
-
 			</span>
 			<span class="tags">
-				
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-
+				<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
 			</span>
 		</div>
 	</footer>
@@ -299,12 +310,6 @@
 
 
 	<hr class="article-devider">
-
-
-
-  
-  
-
     </div>
     <div class="mb-search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
@@ -317,14 +322,12 @@
 		<a href="/">Shimon on GitHub</a>
 	</h1>
 	<span class="copyright">
-		&copy; 2018 Shimon Haga<br>
+		&copy; 2019 Shimon Haga<br>
 		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
 		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
 	</span>
 </footer>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
 <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
@@ -334,4 +337,3 @@
 <script src="/js/script.js"></script>
   </div>
 </body>
-</html>
